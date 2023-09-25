@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class arthimaticoperators
+{
+    public static void main(String args[])
+    {
+        int num1,num2,add;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first num:");
+        num1=sc.nextInt();
+        System.out.println("enter second num:");
+        num2=sc.nextInt();
+        add=num1+num2;
+        System.out.println("addition="+add);
+        
+    }
+}
+
+enter first num:
+5
+enter second num:
+7
+addition=12
