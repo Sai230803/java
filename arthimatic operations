@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class arthimaticoperations
+{
+    public static void main(String args[])
+    {
+        int num1,num2,add,sub,mul;
+        float div;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two numbers:");
+        num1=sc.nextInt();
+        num2=sc.nextInt();
+        add=num1+num2;
+        sub=num1-num2;
+        mul=num1*num2;
+        div=(float)num1/num2;
+        System.out.println("sum="+add);
+        System.out.println("subtraction="+sub);
+        System.out.println("multiplication="+mul); 
+        System.out.println("division="+div);
+    }
+}
+
+enter two numbers:
+4
+5
+sum=9
+subtraction=-1
+multiplication=20
+division=0.8
