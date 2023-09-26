@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class PalindromeFinder {
+    public static int reverse(int num) {
+        int reversedNum = 0;
+        while (num != 0) {
+            int digit = num % 10;
+            reversedNum = reversedNum * 10 + digit;
+            num /= 10;
+        }
+        return reversedNum;
+    }
+    public static boolean isPalindrome(int num) {
+        return num == reverse(num);
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int inputNumber = scanner.nextInt();
+        int steps = 0;
+        while (!isPalindrome(inputNumber)) {
+            int reversedInput = reverse(inputNumber);
+            inputNumber += reversedInput;
+            steps++;
+            System.out.printf("%d + %d = %d\n", inputNumber - reversedInput, reversedInput, inputNumber);
+        }
+        System.out.println("Palindrome found after " + steps + " steps: " + inputNumber);
+    }
+}
