@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class ATM
+{
+    public static void main(String args[])
+    {
+        int a,a1,b,b1,c,c1,d,d1,x;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter 1st Denomination:");
+        a=sc.nextInt();
+        System.out.print("Enter the 1st Denomination number of notes:");
+        a1=sc.nextInt();
+        System.out.print("Enter 2nd Denomination:");
+        b=sc.nextInt();
+        System.out.print("Enter the 2nd Denomination number of notes:");
+        b1=sc.nextInt();
+        System.out.print("Enter 3rd Denomination:");
+        c=sc.nextInt();
+        System.out.print("Enter the 3rd Denomination number of note:");
+        c1=sc.nextInt();
+        System.out.print("Enter 4th Denomination:");
+        d=sc.nextInt();
+        System.out.print("Enter the 4th Denomination number of notes:");
+        d1=sc.nextInt();
+        x=(a*a1)+(b*b1)+(c*c1)+(d*d1);
+        System.out.print("Total available balance in ATM: "+x);
+    }
+}
+
+
+
+Enter 1st Denomination:500
+Enter the 1st Denomination number of notes:4
+Enter 2nd Denomination:100
+Enter the 2nd Denomination number of notes:20
+Enter 3rd Denomination:200
+Enter the 3rd Denomination number of note:32
+Enter 4th Denomination:2000
+Enter the 4th Denomination number of notes:1
+Total available balance in ATM: 12400
