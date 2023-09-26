@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class SimpleInterest
+{
+    public static void main(String args[])
+    {
+        int p,r,t,SI;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Principle amount:");
+        p=sc.nextInt();
+        System.out.print("Enter the no.of years:");
+        t=sc.nextInt();
+        System.out.print("Is customer Senior citizen(y/n):");
+        String ch=sc.next();
+        if(ch.equals("y"))
+        {
+            r=12;
+        }
+        else
+        {
+            r=10;
+        }
+        SI=(p*t*r)/100;
+        System.out.print("Simple interest:"+SI);
+    }
+}
