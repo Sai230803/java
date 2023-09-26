@@ -26,3 +26,11 @@ public class PalindromeFinder {
         System.out.println("Palindrome found after " + steps + " steps: " + inputNumber);
     }
 }
+
+
+Enter a number: 7325
+7325+ 5237 = 12562
+12562+ 26521 = 3908339083 + 38093 = 77176
+77176 + 67177= 144353
+144353+ 353441 = 497794
+Palindrome found after 5 steps: 497794
