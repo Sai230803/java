@@ -7,16 +7,20 @@ public class ReverseNumber
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter n value:");
         n=sc.nextInt();
-        while(n>0)
+        if(n<0)
         {
-            r=n%10;
-            sum=sum*10+r;
-            n=n/10;
+            System.out.print("Invalid input.Enter positive number");
         }
-        System.out.print("Reverse Number:"+sum);
+        else
+        {
+            while(n>0)
+            {
+                r=n%10;
+                sum=sum*10+r;
+                n=n/10;
+            }
+            System.out.print("Reverse Number: "+sum);
+        }
     }
-}
-
-
-Enter n value:12345
-Reverse Number:54321
+    
+}  
