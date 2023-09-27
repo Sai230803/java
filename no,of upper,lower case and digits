@@ -1,0 +1,52 @@
+import java.util.*;
+class upper_lower_num
+{
+    public static void main(String[] args)
+    {
+        Scanner a=new Scanner(System.in);
+        String c=" ";
+        int c1=0,c2=0,c3=0;
+        while(c.charAt(0)!='*')
+        {
+            System.out.println("enter any character:");
+            c=a.next();
+            if(Character.isUpperCase(c.charAt(0)))
+            {
+                c1++;
+            }
+            else if(Character.isLowerCase(c.charAt(0)))
+            {
+                c2++;
+            }
+            else if(Character.isDigit(c.charAt(0)))
+            {
+                c3++;
+            }
+        }
+        System.out.println("total no.of upper case:"+c1);
+        System.out.println("total no.of lower case:"+c2);
+        System.out.println("total no.of Digits:"+c3);
+        
+    }
+}
+
+
+
+enter any character:
+A
+enter any character:3
+enter any character:
+f
+enter any character:
+W
+enter any character:
+e
+enter any character:
+f
+enter any character:5
+enter any character:
+4
+enter any character:
+*
+total no.of upper case:2
+total no.of lower case:3total no.of Digits:3
