@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class Bonus
+{
+    public static void main(String args[])
+    {
+        int a,bonus,total;
+        String grade;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the grade of Employee:");
+        grade=sc.next();
+        System.out.print("Enter the employee salary:");
+        a=sc.nextInt();
+        if(grade.equals("A"))
+        {
+            if(a<10000)
+            {
+                bonus=(a*7)/100;
+                total=a+bonus;
+                System.out.println("Bonus = "+bonus);
+                System.out.println("Total amount to be paid ="+total);
+            }
+            else
+            {
+                 bonus=(a*5)/100;
+                total=a+bonus;
+                System.out.println("Bonus = "+bonus);
+                System.out.println("Total amount to be paid = "+total);
+            }
+        }
+        else if(grade.equals("B"))
+        {
+            if(a<10000)
+            {
+                 bonus=(a*12)/100;
+                total=a+bonus;
+                System.out.println("Bonus = "+bonus);
+                System.out.println("Total amount to be paid = "+total);
+            }
+            else
+            {
+                 bonus=(a*10)/100;
+                total=a+bonus;
+                System.out.println("Bonus = "+bonus);
+                System.out.println("Total amount to be paid = "+total);
+            }
+        }
+        else
+        {
+            System.out.println("Invalid input.Enter correct rade(A/B)");
+        }
+    }
+}
+
+
+
+Enter the grade of Employee:A
+Enter the employee salary:11000
+Bonus = 550
+Total amount to be paid = 11550
